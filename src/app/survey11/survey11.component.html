@@ -1,0 +1,30 @@
+<h1>
+TURN 360 DEGREES
+</h1>
+<p style="font-weight:bold">INSTRUCTIONS: Turn completely around in a full circle. Pause. Then turn a full circle in the other direction.</p>
+<form>
+  <p> Select one of the following:</p>
+  <input type="radio" id="male" name="gender" value="0">
+  <label for="male" style="font-weight:bold">0 ( needs assistance while turning.)</label><br>
+  <input type="radio" id="female" name="gender" value="1">
+  <label for="female" style="font-weight:bold">1 ( needs close supervision or verbal cueing.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">2 ( able to turn 360 safely but slowly.))</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">3 ( able to turn 360 safely one side only in <4 seconds.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">4 ( able to turn 360 degrees safely in 4 seconds or less.)</label><br>
+<button [routerLink]="['/survey10']">
+      Previous
+    </button>
+<button [routerLink]="['/survey12']">
+      Next
+    </button>
+
+     <div id="appTimer" class="container">
+  <p id="labelTimer"> Stopwatch </p><br>
+	<button id="startTimer" (click)='start()'>START</button>
+	<button id="stopTimer" (click)='stop()'>STOP</button>
+	<button id="resetTimer" (click)='reset()'>RESET</button>
+	<span id="time">{{minutes}}m {{seconds}}s</span>
+</div>
