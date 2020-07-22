@@ -1,0 +1,18 @@
+<div id="appHeader">
+	Berg Balance Test
+</div>
+<div id="appSurvey">
+
+  <router-outlet></router-outlet>
+  
+    <app-body></app-body>
+</div>
+<div id="appTimer" class="container">
+  <p id="labelTimer"> Stopwatch </p><br>
+	<button id="startTimer" (click)='start()'>START</button>
+	<button id="stopTimer" (click)='stop()'>STOP</button>
+	<button id="resetTimer" (click)='reset()'>RESET</button>
+	<span id="time">{{minutes}}m {{seconds}}s</span>
+</div>
+
+<router-outlet></router-outlet>
