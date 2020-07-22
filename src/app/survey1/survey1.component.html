@@ -1,19 +1,25 @@
-<br>
-  <br>
-  <br>
-  <br>
-<p>
-Part 1
-</p>
+
+<h1>
+SITTING TO STANDING
+</h1>
+<p style="font-weight:bold">INSTRUCTIONS: Please stand up. Try not to use your hands for support.</p>
 <form>
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <input type="submit" value="Submit"(click)="setFirstName(fname)"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-  </form>
-<button [routerLink]="['/survey2']">
-      Part 2
+  <p> Select one of the following:</p>
+  <input type="radio" id="male" name="gender" value="0">
+  <label for="male" style="font-weight:bold">0 (needs moderate or maximal assist to stand.)</label><br>
+  <input type="radio" id="female" name="gender" value="1">
+  <label for="female" style="font-weight:bold">1 ( needs minimal aid to stand or to stabilize.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">2 ( able to stand using hands after several tries.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">3 ( able to stand independently without using hands.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">4 ( able to stand without using hands and stabilize independently.)</label><br>
+  
+</form> 
+<button [routerLink]="['/survey1']">
+      Previous
+    </button><button [routerLink]="['/survey2']">
+      Next
     </button>
     

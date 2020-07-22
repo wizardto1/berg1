@@ -5,3 +5,13 @@ body {
 app-body{
   height:80vh;
 }
+app-header{
+  position:fixed; top:0vh;  
+  background:#c6c0c0;
+  font-size: 4vh;
+  font-weight: bold;
+  width:100vw;
+  height:6vh;
+  align-content:center;
+  text-align:center;
+}

@@ -2,14 +2,19 @@ p {
   font-family: Lato;
 }
 #appHeader{
-  position:fixed; top:0vh;  
+  display:flex;
+  top:0vh;  
   background:#c6c0c0;
   font-size: 4vh;
   font-weight: bold;
+  font-family: Lato;
   width:100vw;
   height:6vh;
   align-content:center;
   text-align:center;
+  right: 0;
+  justify-content: space-between;
+  left: 0;
 }
 #survey{
   position:fixed; top:6vh; 
@@ -21,7 +26,7 @@ p {
 
 }
 #appFooter{
-  position:fixed; top:94vh; 
+  display:flex; top:94vh; 
   background:#ffffff;
   font-size: 2vh;
   width:100vw;
@@ -53,9 +58,13 @@ p {
   align-content:center;
   text-align:center;
   border-radius:1vw;
-  position:fixed; top:86vh;  
   width:100vw;
   height:8vh;
+  position:flex;
+  right:0;
+  bottom:0;
+  
+  
   
 
 }
