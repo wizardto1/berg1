@@ -1,20 +1,22 @@
-<br>
-  <br>
-  <br>
-  <br>
-<p>
-Do you think your home is safe?
-</p>
+<h1>
+SITTING WITH BACK UNSUPPORTED BUT FEET SUPPORTED ON FLOOR OR ON A STOOL
+</h1>
+<p style="font-weight:bold">INSTRUCTIONS: Please sit with arms folded for 2 minutes. If a subject is able to stand 2 minutes unsupported, score full points for sitting unsupported. Proceed to item #4. </p>
 <form>
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Yes</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">No</label><br>
-  <input type="submit" value="Submit">
-</form> 
+  <p> Select one of the following:</p>
+  <input type="radio" id="male" name="gender" value="0">
+  <label for="male" style="font-weight:bold">0 ( unable to stand 30 seconds unassisted.))</label><br>
+  <input type="radio" id="female" name="gender" value="1">
+  <label for="female" style="font-weight:bold">1 ( needs several tries to stand unsupported.))</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">2 ( able to stand 30 seconds unsupported.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">3 ( able to stand 2 minutes with supervision.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">4 ( able to stand safely for 2 minutes.)</label><br>
 <button [routerLink]="['/survey2']">
-      Part 3
+      Previous
     </button>
 <button [routerLink]="['/survey4']">
-      Part 4
+      Next
     </button>

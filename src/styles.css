@@ -5,6 +5,12 @@ body {
 app-body{
   height:80vh;
 }
+h1{
+  font-family:Lato;
+}
+p{
+  font-family:Lato;
+}
 app-header{
   position:fixed; top:0vh;  
   background:#c6c0c0;
