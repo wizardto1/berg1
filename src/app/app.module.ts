@@ -14,6 +14,8 @@ import { DataService } from './data.service';
 import { BodyComponent } from './body/body.component';
 import { TimerComponent } from './timer/timer.component';
 import { HeaderComponent } from './header/header.component';
+import { Survey5Component } from './survey5/survey5.component';
+import { Survey6Component } from './survey6/survey6.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo : '/home', pathMatch:'full' },{path:'home', component: HomeComponent },{path:'survey1',component:Survey1Component, pathMatch:'full'},{path:'survey2',component:Survey2Component},{path:'survey3',component:Survey3Component},{path:'survey4',component:Survey4Component},{path:'results',component:ResultsComponent}
@@ -21,7 +23,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,  RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent,  HomeComponent, Survey1Component, Survey2Component, Survey3Component, ResultsComponent, Survey4Component, BodyComponent, TimerComponent, HeaderComponent ],
+  declarations: [ AppComponent,  HomeComponent, Survey1Component, Survey2Component, Survey3Component, ResultsComponent, Survey4Component, BodyComponent, TimerComponent, HeaderComponent, Survey5Component, Survey6Component ],
   bootstrap:    [ AppComponent ],
   providers: [DataService]
 })

@@ -5,18 +5,26 @@ SITTING WITH BACK UNSUPPORTED BUT FEET SUPPORTED ON FLOOR OR ON A STOOL
 <form>
   <p> Select one of the following:</p>
   <input type="radio" id="male" name="gender" value="0">
-  <label for="male" style="font-weight:bold">0 ( unable to stand 30 seconds unassisted.))</label><br>
+  <label for="male" style="font-weight:bold">0 ( unable to sit without support for 10 seconds.)</label><br>
   <input type="radio" id="female" name="gender" value="1">
-  <label for="female" style="font-weight:bold">1 ( needs several tries to stand unsupported.))</label><br>
+  <label for="female" style="font-weight:bold">1 ( able to sit 10 seconds.)</label><br>
   <input type="radio" id="other" name="gender" value="2">
-  <label for="other" style="font-weight:bold">2 ( able to stand 30 seconds unsupported.)</label><br>
+  <label for="other" style="font-weight:bold">2 ( able to sit 30 seconds.)</label><br>
   <input type="radio" id="other" name="gender" value="2">
-  <label for="other" style="font-weight:bold">3 ( able to stand 2 minutes with supervision.)</label><br>
+  <label for="other" style="font-weight:bold">3 ( able to sit 2 minutes under supervision.)</label><br>
   <input type="radio" id="other" name="gender" value="2">
-  <label for="other" style="font-weight:bold">4 ( able to stand safely for 2 minutes.)</label><br>
+  <label for="other" style="font-weight:bold">4 ( able to sit safely and securely for 2 minutes.)</label><br>
 <button [routerLink]="['/survey2']">
       Previous
     </button>
 <button [routerLink]="['/survey4']">
       Next
     </button>
+
+     <div id="appTimer" class="container">
+  <p id="labelTimer"> Stopwatch </p><br>
+	<button id="startTimer" (click)='start()'>START</button>
+	<button id="stopTimer" (click)='stop()'>STOP</button>
+	<button id="resetTimer" (click)='reset()'>RESET</button>
+	<span id="time">{{minutes}}m {{seconds}}s</span>
+</div>
