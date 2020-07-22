@@ -1,19 +1,22 @@
-<br>
-  <br>
-  <br>
-  <br>
-<p>
-  What rooms do you have?
-  </p>
+<h1>
+STANDING TO SITTING
+</h1>
+<p style="font-weight:bold">INSTRUCTIONS: Please sit down. </p>
 <form>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1"> Bathroom</label><br>
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-  <label for="vehicle2">Bedroom</label><br>
-  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-  <label for="vehicle3">Kitchen</label><br><br>
-  <input type="submit" value="Submit">
-</form>
-<button [routerLink]="['/results']">
-      Results
+  <p> Select one of the following:</p>
+  <input type="radio" id="male" name="gender" value="0">
+  <label for="male" style="font-weight:bold">0 ( needs assistance to sit.)</label><br>
+  <input type="radio" id="female" name="gender" value="1">
+  <label for="female" style="font-weight:bold">1 ( sits independently but has uncontrolled descent.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">2 ( uses back of legs against chair to control descent.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">3 ( controls descent by using hands.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">4 ( sits safely with minimal use of hands.)</label><br>
+<button [routerLink]="['/survey3']">
+      Previous
+    </button>
+<button [routerLink]="['/survey5']">
+      Next
     </button>

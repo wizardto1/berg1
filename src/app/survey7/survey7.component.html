@@ -1,0 +1,30 @@
+<h1>
+STANDING UNSUPPORTED WITH FEET TOGETHER
+</h1>
+<p style="font-weight:bold">INSTRUCTIONS: Place your feet together and stand without holding</p>
+<form>
+  <p> Select one of the following:</p>
+  <input type="radio" id="male" name="gender" value="0">
+  <label for="male" style="font-weight:bold">0 ( needs help to attain position and unable to hold for 15 seconds.))</label><br>
+  <input type="radio" id="female" name="gender" value="1">
+  <label for="female" style="font-weight:bold">1 ( needs help to attain position but able to stand 15 seconds feet together.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">2 ( able to place feet together independently but unable to hold for 30 seconds.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">3 ( able to place feet together independently and stand for 1 minute with supervision.)</label><br>
+  <input type="radio" id="other" name="gender" value="2">
+  <label for="other" style="font-weight:bold">4 ( able to place feet together independently and stand 1 minute safely.))</label><br>
+<button [routerLink]="['/survey6']">
+      Previous
+    </button>
+<button [routerLink]="['/warning1']">
+      Next
+    </button>
+
+    <div id="appTimer" class="container">
+  <p id="labelTimer"> Stopwatch </p><br>
+	<button id="startTimer" (click)='start()'>START</button>
+	<button id="stopTimer" (click)='stop()'>STOP</button>
+	<button id="resetTimer" (click)='reset()'>RESET</button>
+	<span id="time">{{minutes}}m {{seconds}}s</span>
+</div>
