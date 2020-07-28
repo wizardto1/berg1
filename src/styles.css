@@ -5,6 +5,11 @@ body {
 app-body{
   height:80vh;
 }
+button{
+  font-size:4vh;
+  width:35%;
+  margin:6vh 3vh 3vh 3vh;
+}
 h1, label{
   font-family:Lato;
 }
