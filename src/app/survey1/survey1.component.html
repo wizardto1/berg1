@@ -19,7 +19,7 @@ SITTING TO STANDING
   <label for="skip" style="font-weight:bold">Not applicable/Skip</label>
   
 </form> 
-<button [routerLink]="['/home']">
+<button [routerLink]="['/home']" (click)="setScore1(flag)">
       Previous
     </button><button [routerLink]="['/survey2']" (click)="setScore1(flag)" [disabled]="!buttonDisabled">
       Next
