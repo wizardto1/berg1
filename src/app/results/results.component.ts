@@ -18,8 +18,11 @@ export class ResultsComponent implements OnInit {
   score9;
   score10;
   score11;
-  score12;score13;score14;
-  total;max:number=56;
+  score12;
+  score13;
+  score14;
+  total;
+  max:number=56;
 
   constructor(private scoresService: ScoresService) { }
 
@@ -35,9 +38,9 @@ export class ResultsComponent implements OnInit {
     this.score9=this.scoresService.getScore9();
     this.score10=this.scoresService.getScore10();
     this.score11=this.scoresService.getScore11();
-    this.score2=this.scoresService.getScore12();
-    this.score2=this.scoresService.getScore13();
-    this.score2=this.scoresService.getScore14();
+    this.score12=this.scoresService.getScore12();
+    this.score13=this.scoresService.getScore13();
+    this.score14=this.scoresService.getScore14();
 
     
   }
