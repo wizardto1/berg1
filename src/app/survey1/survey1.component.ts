@@ -8,18 +8,22 @@ import { ScoresService } from '../scores.service';
   styleUrls: ['./survey1.component.css']
 })
 export class Survey1Component implements OnInit {
-
+  flag;
+  buttonDisaabled:boolean=false;
+  score1;
   constructor(private scoresService: ScoresService) { }
 
-  ngOnInit() {
+  setScore1(flag){
+    this.scoresService.setScore1(flag)
+    this.scoresService.setButton1(this.buttonDisabled)
   }
-
-}
-export class Name {
-
-  constructor(
-    public first: string,
-    public last: string,
-  ) {  }
-
+  ngOnInit() {
+  
+this.flag=this.scoresService.getScore1()
+this.buttonDisabled=this.scoresService.getButton1()
+  }
+  radioEventHandler(event:any){
+    this.score1=event.target.value
+    this.buttonDisabled=true;
+  }
 }
