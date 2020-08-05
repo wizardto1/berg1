@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { DataService } from './data.service';
+import { ScoresService } from '../scores.service';
 
 @Component({
   selector: 'app-survey1',
@@ -9,7 +9,7 @@ import { DataService } from './data.service';
 })
 export class Survey1Component implements OnInit {
 
-  constructor() { }
+  constructor(private scoresService: ScoresService) { }
 
   ngOnInit() {
   }
