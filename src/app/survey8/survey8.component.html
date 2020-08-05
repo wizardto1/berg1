@@ -17,9 +17,9 @@ REACHING FORWARD WITH OUTSTRETCHED ARM WHILE STANDING
   <label for="4" style="font-weight:bold">4 ( can reach forward confidently > 25 cm (10 inches). </label><br>
   <input type="radio" id="skip" name="q8" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="skip" style="font-weight:bold">Not applicable/Skip</label><br>
-<button [routerLink]="['/warning1']">
+<button [routerLink]="['/warning1']" (click)="setScore8(flag)" >
       Previous
     </button>
-<button [routerLink]="['/survey9']">
+<button [routerLink]="['/survey9']" (click)="setScore8(flag)" [disabled]="!buttonDisabled">
       Next
     </button>

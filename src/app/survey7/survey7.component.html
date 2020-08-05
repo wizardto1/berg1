@@ -6,7 +6,7 @@ STANDING UNSUPPORTED WITH FEET TOGETHER
 <form>
   <p> Select one of the following:</p>
   <input type="radio" id="male" name="gender" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="male" style="font-weight:bold">0 ( needs help to attain position and unable to hold for 15 seconds.))</label><br>
+  <label for="male" style="font-weight:bold">0 ( needs help to attain position and unable to hold for 15 seconds.)</label><br>
   <input type="radio" id="female" name="gender" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="female" style="font-weight:bold">1 ( needs help to attain position but able to stand 15 seconds feet together.)</label><br>
   <input type="radio" id="other" name="gender" value="2" [(ngModel)]="flag" (change)=radioEventHandler($event)>
@@ -14,13 +14,13 @@ STANDING UNSUPPORTED WITH FEET TOGETHER
   <input type="radio" id="other" name="gender" value="3" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="other" style="font-weight:bold">3 ( able to place feet together independently and stand for 1 minute with supervision.)</label><br>
   <input type="radio" id="other" name="gender" value="4" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="other" style="font-weight:bold">4 ( able to place feet together independently and stand 1 minute safely.))</label><br>
+  <label for="other" style="font-weight:bold">4 ( able to place feet together independently and stand 1 minute safely.)</label><br>
   <input type="radio" id="other" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="other" style="font-weight:bold">Not applicable/Skip</label><br>
-<button [routerLink]="['/survey6']">
+<button [routerLink]="['/survey6']" (click)="setScore7(flag)">
       Previous
     </button>
-<button [routerLink]="['/warning1']">
+<button [routerLink]="['/warning1']" (click)="setScore7(flag)" [disabled]="!buttonDisabled">
       Next
     </button>
 

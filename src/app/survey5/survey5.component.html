@@ -17,9 +17,9 @@ TRANSFERS
   <label for="other" style="font-weight:bold">4 ( able to transfer safely with minor use of hands.)</label><br>
   <input type="radio" id="other" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="other" style="font-weight:bold">Not applicable/Skip</label><br>
-<button [routerLink]="['/survey4']">
+<button [routerLink]="['/survey4']" (click)="setScore5(flag)" >
       Previous
     </button>
-<button [routerLink]="['/survey6']">
+<button [routerLink]="['/survey6']" (click)="setScore5(flag)" [disabled]="!buttonDisabled">
       Next
     </button>

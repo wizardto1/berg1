@@ -15,7 +15,7 @@ PICK UP OBJECT FROM THE FLOOR FROM A STANDING POSITION
   <label for="3" style="font-weight:bold">3 ( able to pick up slipper but needs supervision.)</label><br>
   <input type="radio" id="4" name="q9" value="4" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="4" style="font-weight:bold">4 ( able to pick up the slipper safely and easily.) </label><br>
-  <input type="radio" id="skip" name="q9" value="skip" [(ngModel)]="flag" >
+  <input type="radio" id="skip" name="q9" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="skip" style="font-weight:bold">Not applicable/Skip</label><br>
 <button [routerLink]="['/survey8']">
       Previous

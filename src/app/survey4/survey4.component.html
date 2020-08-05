@@ -17,9 +17,9 @@ STANDING TO SITTING
   <label for="other" style="font-weight:bold">4 ( sits safely with minimal use of hands.)</label><br>
   <input type="radio" id="other" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="other" style="font-weight:bold">Not applicable/Skip</label><br>
-<button [routerLink]="['/survey3']">
+<button [routerLink]="['/survey3']" (click)="setScore4(flag)" >
       Previous
     </button>
-<button [routerLink]="['/survey5']">
+<button [routerLink]="['/survey5']" (click)="setScore4(flag)" [disabled]="!buttonDisabled">
       Next
     </button>
