@@ -14,7 +14,7 @@
     Sitting to Standing
   </td>
   <td>
-    ___
+    {{score1}}
     </td>
   </tr>
   <tr>
@@ -22,7 +22,7 @@
     Standing Unsupported
     </td>
     <td>
-      ___
+      {{score2}}
       </td>
   </tr>
   <tr>
@@ -30,7 +30,7 @@
     Sitting Unsupported
     </td>
     <td>
-      ___
+      {{score3}}
       </td>
   </tr>
   <tr>
@@ -38,7 +38,7 @@
     Standing to Sitting
   </td>
   <td>
-   ___
+   {{score4}}
    </td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@
     Transfers
     </td>
     <td>
-    ___
+    {{score5}}
     </td>
   </tr>
   <tr>
@@ -54,7 +54,7 @@
       Standing With Eyes Closed
     </td>
     <td>
-      ___
+      {{score6}}
       </td>
     </tr>
     <tr>
@@ -62,7 +62,7 @@
         Standing With Feet Together
     </td>
     <td>
-      ___
+      {{score7}}
       </td>
     </tr>
     <tr>
@@ -70,22 +70,25 @@
       Reaching Forward With Outstretched Arm
     </td>
     <td>
-      ___
+      {{score8}}
       </td>    
     </tr>
     <tr>
-    <td>Retrieving Object from Floor</td> <td>___</td> <tr>
+    <td>Retrieving Object from Floor</td> <td>{{score9}}</td> <tr>
       <tr>
-    <td>Turning to Look Behind</td><td>___</td></tr>
-    <tr><td>Turning 360 Degrees</td><td>___</td></tr>
+    <td>Turning to Look Behind</td><td>{{score10}}</td></tr>
+    <tr><td>Turning 360 Degrees</td><td>{{score11}}</td></tr>
     <tr>
-    <td>Placing Alternate Foot On Stool</td><td>___</td></tr>
+    <td>Placing Alternate Foot On Stool</td><td>{{score12}}</td></tr>
     <tr>
-    <td>Standing With One Feet On Front</td> <td>___</td></tr>
-       <tr> <td>Stading On One Foot</td><td>___</td></tr>
+    <td>Standing With One Feet On Front</td> <td>{{score13}}</td></tr>
+       <tr> <td>Stading On One Foot</td><td>{{score14}}</td></tr>
     </table>
-    <p> Total Score (Out of 56): ____</p>
+    <p> Total Score: {{total}}/{{max}}</p>
 </div>
+<button [routerLink]="['/survey14']">
+      Change Anwsers
+    </button>
 <button [routerLink]="['/home']">
       Take Again
     </button>

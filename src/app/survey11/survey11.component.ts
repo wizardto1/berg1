@@ -1,15 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ScoresService } from '../scores.service';
 @Component({
   selector: 'app-survey11',
   templateUrl: './survey11.component.html',
   styleUrls: ['./survey11.component.css']
 })
 export class Survey11Component implements OnInit {
+flag;
+  buttonDisaabled:boolean=false;
+  
+  constructor(private scoresService: ScoresService) { }
 
-   constructor() { }
-
+  setScore11(flag){
+    this.scoresService.setScore11(flag)
+    this.scoresService.setButton11(this.buttonDisabled)
+  }
   ngOnInit() {
+  
+this.flag=this.scoresService.getScore11()
+this.buttonDisabled=this.scoresService.getButton11()
+  }
+  radioEventHandler(event:any){
+    
+    this.buttonDisabled=true;
   }
 time: number = 0;
   minutes:number=  0;

@@ -17,9 +17,9 @@ TURNING TO LOOK BEHIND OVER LEFT AND RIGHT SHOULDERS WHILE STANDING
   <label for="4" style="font-weight:bold">4 ( looks behind from both sides and weight shifts well.) </label><br>
   <input type="radio" id="skip" name="q10" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="skip" style="font-weight:bold">Not applicable/Skip</label><br>
-<button [routerLink]="['/survey9']">
+<button [routerLink]="['/survey9']"  (click)="setScore10(flag)" >
       Previous
     </button>
-<button [routerLink]="['/survey11']">
+<button [routerLink]="['/survey11']"  (click)="setScore10(flag)" [disabled]="!buttonDisabled">
       Next
     </button>
