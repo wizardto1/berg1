@@ -5,17 +5,17 @@ STANDING UNSUPPORTED ONE FEET IN FRONT
 <p style="font-weight:bold">INSTRUCTIONS: (DEMONSTRATE TO SUBJECT) Place one foot directly in front of the other. If you feel that you cannot place your foot directly in front, try to step far enough ahead that the heel of your forward foot is ahead of the toes of the other foot. (To score 3 points, the length of the step should exceed the length of the other foot and the width of the stance should approximate the subject's normal stride width).</p>
 <form>
   <p> Select one of the following:</p>
-  <input type="radio" id="male" name="gender" value="0">
+  <input type="radio" id="male" name="gender" value="0" [(ngModel)]="flag">
   <label for="male" style="font-weight:bold">0 ( loses balance while stepping or standing.)</label><br>
-  <input type="radio" id="female" name="gender" value="1">
+  <input type="radio" id="female" name="gender" value="1" [(ngModel)]="flag">
   <label for="female" style="font-weight:bold">1 ( needs help to step but can hold 15 seconds.)</label><br>
-  <input type="radio" id="other" name="gender" value="2">
+  <input type="radio" id="other" name="gender" value="2" [(ngModel)]="flag">
   <label for="other" style="font-weight:bold">2 ( able to take small step independently and hold 30 seconds.)</label><br>
-  <input type="radio" id="other" name="gender" value="3">
+  <input type="radio" id="other" name="gender" value="3" [(ngModel)]="flag">
   <label for="other" style="font-weight:bold">3 ( able to place foot ahead of other independently and hold 30 seconds.)</label><br>
-  <input type="radio" id="other" name="gender" value="4">
+  <input type="radio" id="other" name="gender" value="4" [(ngModel)]="flag">
   <label for="other" style="font-weight:bold">4 ( able to place foot tandem independently and hold for 30 seconds.)</label><br>
-  <input type="radio" id="other" name="gender" value="skip">
+  <input type="radio" id="other" name="gender" value="skip" [(ngModel)]="flag">
   <label for="other" style="font-weight:bold">Not applicable/Skip</label><br>
 <button [routerLink]="['/survey12']">
       Previous

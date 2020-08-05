@@ -5,17 +5,17 @@ SITTING TO STANDING
 <p style="font-weight:bold">INSTRUCTIONS: Please stand up. Try not to use your hands for support.</p>
 <form>
   <p> Select one of the following:</p>
-  <input type="radio" id="0" name="q1" value="0">
+  <input type="radio" id="0" name="q1" value="0" [(ngModel)]="flag">
   <label for="0" style="font-weight:bold">0 (needs moderate or maximal assist to stand.)</label><br>
-  <input type="radio" id="1" name="q1" value="1">
+  <input type="radio" id="1" name="q1" value="1" [(ngModel)]="flag">
   <label for="0" style="font-weight:bold">1 ( needs minimal aid to stand or to stabilize.)</label><br>
-  <input type="radio" id="2" name="q1" value="2">
+  <input type="radio" id="2" name="q1" value="2" [(ngModel)]="flag">
   <label for="2" style="font-weight:bold">2 ( able to stand using hands after several tries.)</label><br>
-  <input type="radio" id="3" name="q1" value="3">
+  <input type="radio" id="3" name="q1" value="3" [(ngModel)]="flag">
   <label for="3" style="font-weight:bold">3 ( able to stand independently without using hands.)</label><br>
-  <input type="radio" id="4" name="q1" value="4">
+  <input type="radio" id="4" name="q1" value="4" [(ngModel)]="flag">
   <label for="4" style="font-weight:bold">4 ( able to stand without using hands and stabilize independently.)</label><br>
-  <input type="radio" id="skip" name="q1" value="skip">
+  <input type="radio" id="skip" name="q1" value="skip" [(ngModel)]="flag">
   <label for="skip" style="font-weight:bold">Not applicable/Skip</label>
   
 </form> 

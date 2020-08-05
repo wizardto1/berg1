@@ -25,6 +25,7 @@ import { Survey12Component } from './survey12/survey12.component';
 import { Survey13Component } from './survey13/survey13.component';
 import { Survey14Component } from './survey14/survey14.component';
 import { Warning1Component } from './warning1/warning1.component';
+import { ScoresService } from './scores.service';
 
 const appRoutes: Routes = [
   { path: '', redirectTo : '/home', pathMatch:'full' },{path:'home', component: HomeComponent },{path:'survey1',component:Survey1Component, pathMatch:'full'},{path:'survey2',component:Survey2Component},{path:'survey3',component:Survey3Component},{path:'survey4',component:Survey4Component},{path:'survey5',component:Survey5Component},{path:'survey6',component:Survey6Component},{path:'survey7',component:Survey7Component},{path:'survey8',component:Survey8Component},{path:'survey9',component:Survey9Component},{path:'survey10',component:Survey10Component},{path:'survey11',component:Survey11Component},{path:'survey12',component:Survey12Component},{path:'survey13',component:Survey13Component},{path:'survey14',component:Survey14Component},{path:'warning1',component:Warning1Component},{path:'results',component:ResultsComponent}
@@ -34,7 +35,7 @@ const appRoutes: Routes = [
   imports:      [ BrowserModule, FormsModule,  RouterModule.forRoot(appRoutes) ],
   declarations: [ AppComponent,  HomeComponent, Survey1Component, Survey2Component, Survey3Component, ResultsComponent, Survey4Component, BodyComponent, TimerComponent, HeaderComponent, Survey5Component, Survey6Component, Survey7Component, Survey8Component, Survey9Component, Survey10Component, Survey11Component, Survey12Component, Survey13Component, Survey14Component, Warning1Component ],
   bootstrap:    [ AppComponent ],
-  providers: [DataService]
+  providers: [DataService, ScoresService]
 })
 export class AppModule { }
 export class AppRoutingModule { }
