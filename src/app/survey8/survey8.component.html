@@ -5,17 +5,17 @@ REACHING FORWARD WITH OUTSTRETCHED ARM WHILE STANDING
 <p style="font-weight:bold">INSTRUCTIONS: Lift arm to 90 degrees. Stretch out your fingers and reach forward as far as you can. (Examiner places a ruler at end of fingertips when arm is at 90 degrees. Fingers should nottouch the ruler while reaching forward. The recorded measure is the distance forward that thefinger reaches while the subject is in the most forward lean position. When possible, ask subject to use both arms when reaching to avoid rotation of the trunk).</p>
 <form>
   <p> Select one of the following:</p>
-  <input type="radio" id="0" name="q8" value="0" [(ngModel)]="flag">
+  <input type="radio" id="0" name="q8" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="0" style="font-weight:bold">0 (loses balance while trying/requires external support.)</label><br>
-  <input type="radio" id="1" name="q8" value="1" [(ngModel)]="flag">
+  <input type="radio" id="1" name="q8" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="1" style="font-weight:bold">1 ( reaches forward but needs supervision.)</label><br>
-  <input type="radio" id="2" name="q8" value="2" [(ngModel)]="flag">
+  <input type="radio" id="2" name="q8" value="2" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="2" style="font-weight:bold">2 ( can reach forward >2 inches safely.)</label><br>
-  <input type="radio" id="3" name="q8" value="3" [(ngModel)]="flag">
+  <input type="radio" id="3" name="q8" value="3" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="3" style="font-weight:bold">3 (reaches forward but needs supervision.)</label><br>
-  <input type="radio" id="4" name="q8" value="4" [(ngModel)]="flag">
+  <input type="radio" id="4" name="q8" value="4" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="4" style="font-weight:bold">4 ( can reach forward confidently > 25 cm (10 inches). </label><br>
-  <input type="radio" id="skip" name="q8" value="skip" [(ngModel)]="flag">
+  <input type="radio" id="skip" name="q8" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="skip" style="font-weight:bold">Not applicable/Skip</label><br>
 <button [routerLink]="['/warning1']">
       Previous

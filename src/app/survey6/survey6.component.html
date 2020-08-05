@@ -5,17 +5,17 @@ STANDING UNSUPPORTED WITH EYES CLOSED
 <p style="font-weight:bold">INSTRUCTIONS: Please close your eyes and stand still for 10 seconds.</p>
 <form>
   <p> Select one of the following:</p>
-  <input type="radio" id="male" name="gender" value="0" [(ngModel)]="flag">
+  <input type="radio" id="male" name="gender" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="male" style="font-weight:bold">0 ( needs help to keep from falling.)</label><br>
-  <input type="radio" id="female" name="gender" value="1" [(ngModel)]="flag">
+  <input type="radio" id="female" name="gender" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="female" style="font-weight:bold">1 ( unable to keep eyes closed 3 seconds but stays steady.)</label><br>
-  <input type="radio" id="other" name="gender" value="2" [(ngModel)]="flag">
+  <input type="radio" id="other" name="gender" value="2" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="other" style="font-weight:bold">2 ( able to stand 3 seconds.)</label><br>
-  <input type="radio" id="other" name="gender" value="3" [(ngModel)]="flag">
+  <input type="radio" id="other" name="gender" value="3" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="other" style="font-weight:bold">3 ( able to stand 10 seconds with supervision.)</label><br>
-  <input type="radio" id="other" name="gender" value="4" [(ngModel)]="flag">
+  <input type="radio" id="other" name="gender" value="4" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="other" style="font-weight:bold">4 ( able to stand 10 seconds safely.)</label><br>
-  <input type="radio" id="other" name="gender" value="skip" [(ngModel)]="flag">
+  <input type="radio" id="other" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="other" style="font-weight:bold">Not applicable/Skip</label><br>
 <button [routerLink]="['/survey5']">
       Previous

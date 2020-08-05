@@ -47,6 +47,164 @@ export class ScoresService {
   getButton1(){
     return this.button1;
   }
+  setScore2(score){
+    this.score2=score;
+  }
+  getScore2(){
+    return this.score2
+  }
+  setButton2(button){
+    this.button2=button;
+  }
+  getButton2(){
+    return this.button2;
+  }
+  setScore3(score){
+    this.score3=score;
+  }
+  getScore3(){
+    return this.score3
+  }
+  setButton3(button){
+    this.button3=button;
+  }
+  getButton3(){
+    return this.button3;
+  }
+   setScore4(score){
+    this.score4=score;
+  }
+  getScore4(){
+    return this.score4
+  }
+  setButton4(button){
+    this.button4=button;
+  }
+  getButton4(){
+    return this.button4;
+  }
+  setScore5(score){
+    this.score5=score;
+  }
+  getScore5(){
+    return this.score5
+  }
+  setButton5(button){
+    this.button5=button;
+  }
+  getButton5(){
+    return this.button5;
+  }
+  setScore6(score){
+    this.score6=score;
+  }
+  getScore6(){
+    return this.score6
+  }
+  setButton6(button){
+    this.button6=button;
+  }
+  getButton6(){
+    return this.button6;
+  }
+  setScore7(score){
+    this.score7=score;
+  }
+  getScore7(){
+    return this.score7
+  }
+  setButton7(button){
+    this.button7=button;
+  }
+  getButton7(){
+    return this.button7;
+  }
+  setScore8(score){
+    this.score8=score;
+  }
+  getScore8(){
+    return this.score8
+  }
+  setButton8(button){
+    this.button8=button;
+  }
+  getButton8(){
+    return this.button8;
+  }
+  setScore9(score){
+    this.score9=score;
+  }
+  getScore9(){
+    return this.score9
+  }
+  setButton9(button){
+    this.button9=button;
+  }
+  getButton9(){
+    return this.button9;
+  }
+  setScore10(score){
+    this.score10=score;
+  }
+  getScore10(){
+    return this.score10
+  }
+  setButton10(button){
+    this.button10=button;
+  }
+  getButton10(){
+    return this.button10;
+  }
+  setScore11(score){
+    this.score11=score;
+  }
+  getScore11(){
+    return this.score11
+  }
+  setButton11(button){
+    this.button11=button;
+  }
+  getButton11(){
+    return this.button11;
+  }
+  setScore12(score){
+    this.score12=score;
+  }
+  getScore12(){
+    return this.score12
+  }
+  setButton12(button){
+    this.button12=button;
+  }
+  getButton12(){
+    return this.button12;
+  }
+  setScore13(score){
+    this.score13=score;
+  }
+  getScore13(){
+    return this.score13
+  }
+  setButton13(button){
+    this.button13=button;
+  }
+  getButton13(){
+    return this.button13;
+  }
+  setScore14(score){
+    this.score14=score;
+  }
+  getScore14(){
+    return this.score14
+  }
+  setButton14(button){
+    this.button14=button;
+  }
+  getButton14(){
+    return this.button14;
+  }
+
+
 
   constructor() { }
 

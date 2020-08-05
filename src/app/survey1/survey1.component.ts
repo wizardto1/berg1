@@ -23,7 +23,9 @@ this.flag=this.scoresService.getScore1()
 this.buttonDisabled=this.scoresService.getButton1()
   }
   radioEventHandler(event:any){
-    this.score1=event.target.value
+    
     this.buttonDisabled=true;
   }
 }
+
+this.score1=event.target.value
