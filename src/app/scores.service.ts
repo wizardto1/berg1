@@ -203,6 +203,40 @@ export class ScoresService {
   getButton14(){
     return this.button14;
   }
+  reset(){
+  this.scores=[];
+  this.score1=5;
+  this.score2=5;
+  this.score3=5;
+  this.score4=5;
+  this.score5=5;
+  this.score6=5;
+  this.score7=5;
+ this.score8=5;
+  this.score9=5;
+  this.score10=5;
+  this.score11=5;
+  this.score12=5;
+  this.score13=5;
+  this.score14=5;
+  this.button1=false;
+  this.button2=false;
+  this.button3=false;
+  this.button4=false;
+  this.button5=false;
+  this.button6=false;
+  this.button7=false;
+  this.button8=false;
+  this.button9=false;
+  this.button10=false;
+  this.button11=false;
+  this.button12=false;
+  this.button13=false;
+  this.button14=false;
+  this.total;
+  thismax;
+  return
+  }
 
 
 

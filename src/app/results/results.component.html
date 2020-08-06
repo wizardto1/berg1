@@ -87,8 +87,8 @@
     <p> Total Score: {{total}}/{{max}}</p>
 </div>
 <button [routerLink]="['/survey14']">
-      Change Anwsers
+      Go Back
     </button>
-<button [routerLink]="['/home']">
+<button [routerLink]="['/home']" (click)="reset()">
       Take Again
     </button>

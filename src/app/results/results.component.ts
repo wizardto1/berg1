@@ -25,6 +25,9 @@ export class ResultsComponent implements OnInit {
   max:number=56;
 
   constructor(private scoresService: ScoresService) { }
+  reset(){
+    this.scoresService.reset();
+  }
 
   ngOnInit() {
     this.score1=this.scoresService.getScore1();
