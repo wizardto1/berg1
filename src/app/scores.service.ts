@@ -3,7 +3,7 @@ import { AppModule } from './app.module';
 
 @Injectable()
 export class ScoresService {
-  scores=[];
+  scores:[any,any,any,any,any,any,any,any,any,any,any,any,any,any,any]=[5,5,5,5,5,5,5,5,5,5,5,5,5,5]
   score1:any;
   score2:any;
   score3:any;
@@ -32,11 +32,12 @@ export class ScoresService {
   button12:boolean;
   button13:boolean;
   button14:boolean;
-  total;
+  total:number=0;
   max;
   setScore1(score){
     this.score1=score;
-    console.log(this.score1)
+    this.scores[0]=score;
+    console.log(this.scores[0])
   }
   getScore1(){
     return this.score1
@@ -49,9 +50,11 @@ export class ScoresService {
   }
   setScore2(score){
     this.score2=score;
+    this.scores[1]=score;
   }
   getScore2(){
     return this.score2
+    
   }
   setButton2(button){
     this.button2=button;
@@ -61,6 +64,7 @@ export class ScoresService {
   }
   setScore3(score){
     this.score3=score;
+    this.scores[2]=score;
   }
   getScore3(){
     return this.score3
@@ -73,6 +77,7 @@ export class ScoresService {
   }
    setScore4(score){
     this.score4=score;
+    this.scores[3]=score;
   }
   getScore4(){
     return this.score4
@@ -85,6 +90,7 @@ export class ScoresService {
   }
   setScore5(score){
     this.score5=score;
+    this.scores[4]=score;
   }
   getScore5(){
     return this.score5
@@ -97,6 +103,7 @@ export class ScoresService {
   }
   setScore6(score){
     this.score6=score;
+    this.scores[5]=score;
   }
   getScore6(){
     return this.score6
@@ -109,6 +116,7 @@ export class ScoresService {
   }
   setScore7(score){
     this.score7=score;
+    this.scores[6]=score;
   }
   getScore7(){
     return this.score7
@@ -121,6 +129,7 @@ export class ScoresService {
   }
   setScore8(score){
     this.score8=score;
+    this.scores[7]=score;
   }
   getScore8(){
     return this.score8
@@ -133,6 +142,7 @@ export class ScoresService {
   }
   setScore9(score){
     this.score9=score;
+    this.scores[8]=score;
   }
   getScore9(){
     return this.score9
@@ -145,6 +155,7 @@ export class ScoresService {
   }
   setScore10(score){
     this.score10=score;
+    this.scores[9]=score;
   }
   getScore10(){
     return this.score10
@@ -157,6 +168,7 @@ export class ScoresService {
   }
   setScore11(score){
     this.score11=score;
+    this.scores[10]=score;
   }
   getScore11(){
     return this.score11
@@ -169,6 +181,7 @@ export class ScoresService {
   }
   setScore12(score){
     this.score12=score;
+    this.scores[11]=score;
   }
   getScore12(){
     return this.score12
@@ -181,6 +194,7 @@ export class ScoresService {
   }
   setScore13(score){
     this.score13=score;
+    this.scores[12]=score;
   }
   getScore13(){
     return this.score13
@@ -193,6 +207,8 @@ export class ScoresService {
   }
   setScore14(score){
     this.score14=score;
+    this.scores[13]=score;
+    console.log(this.scores)
   }
   getScore14(){
     return this.score14
@@ -202,6 +218,22 @@ export class ScoresService {
   }
   getButton14(){
     return this.button14;
+  }
+
+  gettotal(){
+    for (let i = 0; i < 14; i++){
+      if (this.scores[i]=='skip'){
+        this.max-=4;
+      }
+      else{
+      this.total+=parseInt(this.scores[i]);
+      console.log(this.total)}
+    }
+    console.log(this.total)
+    return this.total;
+  }
+  getmax(){
+    return this.max;
   }
   reset(){
   this.scores=[];
@@ -233,10 +265,12 @@ export class ScoresService {
   this.button12=false;
   this.button13=false;
   this.button14=false;
-  this.total;
-  thismax;
+  this.total=0;
+  this.max=56;
   return
   }
+
+
 
 
 

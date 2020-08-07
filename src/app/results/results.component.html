@@ -82,13 +82,16 @@
     <td>Placing Alternate Foot On Stool</td><td>{{score12}}</td></tr>
     <tr>
     <td>Standing With One Feet On Front</td> <td>{{score13}}</td></tr>
-       <tr> <td>Stading On One Foot</td><td>{{score14}}</td></tr>
+       <tr> <td>Standing On One Foot</td><td>{{score14}}</td></tr>
     </table>
     <p> Total Score: {{total}}/{{max}}</p>
 </div>
 <button [routerLink]="['/survey14']">
       Go Back
     </button>
+    <button [routerLink]="['/email']" >
+      Email Results
+    </button>
 <button [routerLink]="['/home']" (click)="reset()">
-      Take Again
+      Retake
     </button>

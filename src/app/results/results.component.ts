@@ -44,7 +44,8 @@ export class ResultsComponent implements OnInit {
     this.score12=this.scoresService.getScore12();
     this.score13=this.scoresService.getScore13();
     this.score14=this.scoresService.getScore14();
-
+    this.total=this.scoresService.gettotal();
+    this.max=this.scoresService.getmax();
     
   }
 
