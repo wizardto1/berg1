@@ -23,8 +23,15 @@ export class ResultsComponent implements OnInit {
   score14;
   total;
   max:number=56;
-
+  x :any= document.getElementsByClassName("question");
+   
   constructor(private scoresService: ScoresService) { }
+  visible(){
+    let  x = document.getElementsByClassName("question");
+    document.getElementsByClassName("question").style.visibility="visible";
+    
+};
+  
   reset(){
     this.scoresService.reset();
   }

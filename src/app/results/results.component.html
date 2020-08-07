@@ -92,6 +92,13 @@
     <button [routerLink]="['/email']" >
       Email Results
     </button>
-<button [routerLink]="['/home']" (click)="reset()">
+<button (click)="reset()" >
       Retake
+    </button>
+
+  <p class="question" > Are you sure?</p>  <button class="question" (click)="visible()" >
+      No
+    </button>
+<button [routerLink]="['/home']" (click)="reset()" class="question" >
+      Yes
     </button>

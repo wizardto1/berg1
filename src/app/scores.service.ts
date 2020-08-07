@@ -223,6 +223,7 @@ export class ScoresService {
   gettotal(){
     for (let i = 0; i < 14; i++){
       if (this.scores[i]=='skip'){
+        console.log(this.max)
         this.max-=4;
       }
       else{
