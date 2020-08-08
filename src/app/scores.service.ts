@@ -221,6 +221,8 @@ export class ScoresService {
   }
 
   gettotal(){
+    this.total=0;
+    this.max=56
     for (let i = 0; i < 14; i++){
       if (this.scores[i]=='skip'){
         console.log(this.max)

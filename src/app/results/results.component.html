@@ -86,13 +86,14 @@
     </table>
     <p> Total Score: {{total}}/{{max}}</p>
 </div>
-<button [routerLink]="['/survey14']">
+<button [routerLink]="['/survey14']" (click)="goback()">
       Go Back
     </button>
-    <button [routerLink]="['/email']" >
+    <button [routerLink]="['/email']" (click)="goback()" >
       Email Results
     </button>
-<button (click)="reset()" >
+<button (click)='reset()'
+ [routerLink]="['/home']">
       Retake
     </button>
 
