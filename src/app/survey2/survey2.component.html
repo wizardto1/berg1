@@ -5,18 +5,18 @@ STANDING UNSUPPORTED
 <p style="font-weight:bold">INSTRUCTIONS: Please stand for two minutes without holding. </p>
 <form>
   <p> Select one of the following:</p>
-  <input type="radio" id="male" name="gender" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="male" style="font-weight:bold">0 ( unable to stand 30 seconds unassisted.)</label><br>
-  <input type="radio" id="female" name="gender" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="female" style="font-weight:bold">1 ( needs several tries to stand unsupported.)</label><br>
-  <input type="radio" id="other" name="gender" value="2" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="other" style="font-weight:bold">2 ( able to stand 30 seconds unsupported.)</label><br>
-  <input type="radio" id="other" name="gender" value="3" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="other" style="font-weight:bold">3 ( able to stand 2 minutes with supervision.)</label><br>
-  <input type="radio" id="other" name="gender" value="4" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="other" style="font-weight:bold">4 ( able to stand safely for 2 minutes.)</label><br>
-  <input type="radio" id="other" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="other" style="font-weight:bold">Not applicable/Skip</label><br>
+  <input type="radio" id="0" name="gender" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="0" style="font-weight:bold">0 ( unable to stand 30 seconds unassisted.)</label><br>
+  <input type="radio" id="1" name="gender" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="1" style="font-weight:bold">1 ( needs several tries to stand unsupported.)</label><br>
+  <input type="radio" id="2" name="gender" value="2" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="2" style="font-weight:bold">2 ( able to stand 30 seconds unsupported.)</label><br>
+  <input type="radio" id="3" name="gender" value="3" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="3" style="font-weight:bold">3 ( able to stand 2 minutes with supervision.)</label><br>
+  <input type="radio" id="4" name="gender" value="4" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="4" style="font-weight:bold">4 ( able to stand safely for 2 minutes.)</label><br>
+  <input type="radio" id="skip" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="skip" style="font-weight:bold">Not applicable/Skip</label><br>
   
 </form> 
 <button [routerLink]="['/survey1']" (click)="setScore2(flag)">

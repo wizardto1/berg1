@@ -5,18 +5,18 @@ STANDING ON ONE LEG
 <p style="font-weight:bold">INSTRUCTIONS: Stand on one leg as long as you can without holding.</p>
 <form>
   <p> Select one of the following:</p>
-  <input type="radio" id="male" name="gender" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="male" style="font-weight:bold">0 (unable to try or needs assistance to prevent fall.)</label><br>
-  <input type="radio" id="female" name="gender" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="female" style="font-weight:bold">2 ( able to lift leg independently and hold = or >3 seconds.)</label><br>
-  <input type="radio" id="other" name="gender" value="2" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="other" style="font-weight:bold">2 ( able to take small step independently and hold 30 seconds.)</label><br>
-  <input type="radio" id="other" name="gender" value="3" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="other" style="font-weight:bold">3 ( able to lift leg independently and hold 5-10 seconds.)</label><br>
-  <input type="radio" id="other" name="gender" value="4" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="other" style="font-weight:bold">4 ( able to lift leg independently and hold >10 seconds.)</label><br>
-  <input type="radio" id="other" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
-  <label for="other" style="font-weight:bold">Not applicable/Skip</label><br>
+  <input type="radio" id="0" name="gender" value="0" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="0" style="font-weight:bold">0 (unable to try or needs assistance to prevent fall.)</label><br>
+  <input type="radio" id="1" name="gender" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="1" style="font-weight:bold">2 ( able to lift leg independently and hold = or >3 seconds.)</label><br>
+  <input type="radio" id="2" name="gender" value="2" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="2" style="font-weight:bold">2 ( able to take small step independently and hold 30 seconds.)</label><br>
+  <input type="radio" id="3" name="gender" value="3" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="3" style="font-weight:bold">3 ( able to lift leg independently and hold 5-10 seconds.)</label><br>
+  <input type="radio" id="4" name="gender" value="4" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="4" style="font-weight:bold">4 ( able to lift leg independently and hold >10 seconds.)</label><br>
+  <input type="radio" id="skip" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
+  <label for="skip" style="font-weight:bold">Not applicable/Skip</label><br>
 <button [routerLink]="['/survey13']" (click)="setScore14(flag)">
       Previous
     </button>
