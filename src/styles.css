@@ -26,3 +26,6 @@ app-header{
   align-content:center;
   text-align:center;
 }
+app-timer{
+  display:flex;
+}
