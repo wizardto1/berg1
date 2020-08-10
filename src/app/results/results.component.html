@@ -86,15 +86,16 @@
     </table>
     <p> Total Score: {{total}}/{{max}}</p>
 </div>
-<button [routerLink]="['/survey14']" (click)="goback()">
+<div style="text-align:center">
+<button class="button"[routerLink]="['/survey14']" (click)="goback()">
       Go Back
-    </button>
-    <button [routerLink]="['/email']" (click)="goback()" >
-      Email Results
-    </button>
-<button (click)='reset()'
+    </button><br>
+    <button class="button" [routerLink]="['/email']" (click)="goback()" >
+      Email: Click here to email the above results for your records. 
+    </button><br>
+<button class="button"(click)='reset()'
  [routerLink]="['/home']">
-      Retake
+      Restart: Click here to start a new test. (Current results will be discarded) 
     </button>
 
   <p class="question" > Are you sure?</p>  <button class="question" (click)="visible()" >
