@@ -17,6 +17,7 @@ STANDING UNSUPPORTED WITH FEET TOGETHER
   <label for="4" style="font-weight:bold">4 ( able to place feet together independently and stand 1 minute safely.)</label><br>
   <input type="radio" id="skip" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="skip" style="font-weight:bold">Not applicable/Skip</label><br>
+  </form>
 <button [routerLink]="['/survey6']" (click)="setScore7(flag)">
       Previous
     </button>
@@ -24,10 +25,5 @@ STANDING UNSUPPORTED WITH FEET TOGETHER
       Next
     </button>
 
-    <div id="appTimer" class="container">
-  <p id="labelTimer"> Stopwatch </p><br>
-	<button id="startTimer" (click)='start()'>START</button>
-	<button id="stopTimer" (click)='stop()'>STOP</button>
-	<button id="resetTimer" (click)='reset()'>RESET</button>
-	<span id="time">{{minutes}}m {{seconds}}s</span>
-</div>
+   </div>
+   <app-timer></app-timer>
