@@ -1,7 +1,7 @@
 <h1>
 STANDING UNSUPPORTED
 </h1>
-<div style="margin:5px; font-family:Lato;">
+<div style="margin:5px; font-family:Lato; height:60vh;">
 <p style="font-weight:bold">INSTRUCTIONS: Please stand for two minutes without holding. </p>
 <form>
   <p> Select one of the following:</p>
@@ -28,10 +28,5 @@ STANDING UNSUPPORTED
 
     <br>
     <br>
-    <div id="appTimer" class="container">
-  <p id="labelTimer"> Stopwatch </p><br>
-	<button id="startTimer" (click)='start()'>START</button>
-	<button id="stopTimer" (click)='stop()'>STOP</button>
-	<button id="resetTimer" (click)='reset()'>RESET</button>
-	<span id="time">{{minutes}}m {{seconds}}s</span>
-</div>
+    </div>
+    <app-timer></app-timer>

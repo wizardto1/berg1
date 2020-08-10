@@ -1,4 +1,4 @@
-<div style="margin:5px; font-family:Lato;">
+<div style="margin:5px; font-family:Lato; height:0vh;">
 <h1>
 SITTING WITH BACK UNSUPPORTED BUT FEET SUPPORTED ON FLOOR OR ON A STOOL
 </h1>
@@ -17,6 +17,7 @@ SITTING WITH BACK UNSUPPORTED BUT FEET SUPPORTED ON FLOOR OR ON A STOOL
   <label for="4" style="font-weight:bold">4 ( able to sit safely and securely for 2 minutes.)</label><br>
   <input type="radio" id="skip" name="gender" value="skip" [(ngModel)]="flag" (change)=radioEventHandler($event)>
   <label for="skip" style="font-weight:bold">Not applicable/Skip</label><br>
+  </form>
 <button [routerLink]="['/survey2']" (click)="setScore3(flag)" >
       Previous
     </button>
@@ -25,5 +26,5 @@ SITTING WITH BACK UNSUPPORTED BUT FEET SUPPORTED ON FLOOR OR ON A STOOL
     </button>
     
 
-   <div style="margin-top:25px;">  
+   </div> 
   <app-timer></app-timer>
