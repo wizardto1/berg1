@@ -24,6 +24,8 @@ export class ResultsComponent implements OnInit {
   total;
   max:number=56;
   x:HTMLElement;
+  myDate = Date.now();
+  
    
   constructor(private scoresService: ScoresService) { }
   visible(){
@@ -43,6 +45,7 @@ export class ResultsComponent implements OnInit {
   }
 
   ngOnInit() {
+    
     this.score1=this.scoresService.getScore1();
     this.score2=this.scoresService.getScore2();
     this.score3=this.scoresService.getScore3();

@@ -24,9 +24,9 @@ start() {
     this.time++;
     
         this.minutes = Math.floor(this.time / 60);
-        console.log(this.minutes)-(this.minutes * 60)
+        
         this.seconds = this.time-(this.minutes * 60)
-        console.log(this.seconds)
+        
         /** 
         if (Number(this.minutes) < 10) {
           this.minutes = '0' + this.minutes;
