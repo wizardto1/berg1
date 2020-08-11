@@ -1,0 +1,9 @@
+#appFooter{
+  position:relative; top:1vh;
+  background:#ffffff;
+  font-size: 1.5vh;
+  width:100vw;
+  height:3vh;
+  align-content:center;
+  text-align:center;
+}
