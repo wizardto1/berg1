@@ -11,6 +11,11 @@
   width: 100vw;
   cursor: pointer;
 }
+#head{
+  font-size:4vh;
+  font-weight:bold;
+  text-align:center;
+}
 
 .container{
   background:#c6c0c0;

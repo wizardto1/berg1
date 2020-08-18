@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScoresService } from '../scores.service'; 
+import {formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-results',
@@ -24,10 +25,11 @@ export class ResultsComponent implements OnInit {
   total;
   max:number=56;
   x:HTMLElement;
-  myDate = Date.now();
+  today= new Date();
+  jstoday = '';
   
    
-  constructor(private scoresService: ScoresService) { }
+  constructor(private scoresService: ScoresService) {  this.jstoday = formatDate(this.today, 'MM-dd-yyyy hh:mm:ss a', 'en-US');}
   visible(){
 
     this.x = document.getElementsByClassName('question') as HTMLElement;

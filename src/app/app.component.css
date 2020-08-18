@@ -1,20 +1,21 @@
 p {
   font-family: Lato;
 }
+#head{
+  font-size:4vh;
+  font-weight:bold;
+  text-align:center;
+}
 #appHeader{
-  display:flex;
-  top:0vh;  
+  position:flex; top:0vh;  
   background:#c6c0c0;
   font-size: 4vh;
   font-weight: bold;
-  font-family: Lato;
   width:100vw;
   height:6vh;
   align-content:center;
   text-align:center;
-  right: 0;
-  justify-content: space-between;
-  left: 0;
+  font-family:Lato;
 }
 #survey{
   position:fixed; top:6vh; 
