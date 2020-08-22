@@ -32,6 +32,7 @@ interval;
 
 
 start() {
+  if (this.play==false){
   this.play = true;
   this.interval = setInterval(() => {
     this.time++;
@@ -52,7 +53,7 @@ start() {
           this.seconds = '' + this.seconds;
         }*/
         
-  },1000)
+  },1000)}
 }
 
 stop() {

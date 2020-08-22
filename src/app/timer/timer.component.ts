@@ -14,12 +14,13 @@ export class TimerComponent implements OnInit {
 time: number = 0;
   minutes:number=  0;
   seconds:number= 0;
-  
+  play:boolean=false;
   
 interval;
 
 
 start() {
+  if (this.play==false){
   this.play = true;
   this.interval = setInterval(() => {
     this.time++;
@@ -40,7 +41,7 @@ start() {
           this.seconds = '' + this.seconds;
         }*/
         
-  },1000)
+  },1000)}
 }
 
 stop() {
